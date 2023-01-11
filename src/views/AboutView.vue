@@ -1,6 +1,6 @@
 <template>
     <div class="root">
-        <v-container >
+        <v-container tag="main">
             <h1>{{ text }}</h1>
             <v-carousel v-model="model" extends v-img >
                 <v-carousel-item
@@ -11,7 +11,7 @@
                     tile
                     height="100%"
                     >
-                    <img :src="image.src">
+                    <img :src="image.src" :alt="image.alt">
                     <v-row
                         align="center"
                         justify="center"
@@ -25,7 +25,7 @@
                 </v-carousel-item>
             </v-carousel>
         </v-container>
-    </div>
+        </div>
 </template>
 
 <script>
@@ -46,7 +46,5 @@ import { mapActions, mapGetters } from 'vuex';
 </script>
 
 <style>
-    v-carousel{
-        background-size: contain;
-    }
+    
 </style>

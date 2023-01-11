@@ -1,22 +1,27 @@
 [
     {
         "id":1,
-        "src": "./img/courses-1.jpg"
+        "src": "./img/courses-1.jpg",
+        "alt": "courses1"
     },
     {
         "id":2,
-        "src": "./img/courses-3.jpg"
+        "src": "./img/courses-3.jpg",
+        "alt": "courses1"
     },
     {
         "id":3,
-        "src": "./img/about.jpg" 
+        "src": "./img/about.jpg",
+        "alt": "courses1"
     },
     {
         "id":4,
-        "src": "./img/courses-6.jpg"
+        "src": "./img/courses-6.jpg",
+        "alt": "courses1"
     },
     {
         "id":5,
-        "src":"./img/about.jpg" 
+        "src":"./img/about.jpg",
+        "alt": "courses1" 
     }
 ]

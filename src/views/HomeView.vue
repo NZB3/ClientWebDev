@@ -1,15 +1,17 @@
 <template>
-  <div class="home">
-      <v-container>
+  <div class="root">
+      <v-container tag="main">
         <h1>Vue Online Course Site</h1>
-        <div class="wrapper">
+        <div class="wrapper" >
           <CourseCard class="course-cards" v-for="course in allCourses" 
-                      :key="course.id" 
-                      :course="course" 
+                      :key="course.id"
+                      :id="course.id"
+                      :course="course"
+                       
           />
         </div>
       </v-container>
-  </div>
+    </div>
 </template>
 
 <script>
@@ -33,9 +35,9 @@ export default {
   .wrapper{
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
   }
   .course-cards{
-    /* width: 30%; */
     max-width: 30%;
     margin: 1%;
   }

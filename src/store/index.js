@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import coursesModule from './modules/courses/courses'
+import coursesModule from './modules/courses'
 import imagesModule from  './modules/images'
 
 Vue.use(Vuex)

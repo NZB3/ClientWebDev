@@ -1,9 +1,7 @@
 <template>
   <v-app>
     <header-component/>
-    <v-container>
       <router-view/>
-    </v-container>
     <footer-component/>
   </v-app>
 </template>
@@ -28,9 +26,6 @@ import FooterComponent from '@/components/Footer.vue';
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-v-container{
-  max-width: 600px;
 }
 nav {
   padding: 30px;
