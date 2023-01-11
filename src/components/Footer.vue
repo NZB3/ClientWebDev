@@ -3,7 +3,7 @@
         <v-footer
             dark
             padless
-            class="indigo lighten-1"
+            class="primary"
         >
             <v-container>
                 <v-card-text class="white--text text-center">

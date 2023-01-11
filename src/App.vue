@@ -10,7 +10,7 @@
 
 <script>
 import HeaderComponent from '@/components/Header.vue'
-import FooterComponent from './components/Footer.vue';
+import FooterComponent from '@/components/Footer.vue';
 
   export default {
   name: 'App',
@@ -29,7 +29,9 @@ import FooterComponent from './components/Footer.vue';
   text-align: center;
   color: #2c3e50;
 }
-
+v-container{
+  max-width: 600px;
+}
 nav {
   padding: 30px;
 

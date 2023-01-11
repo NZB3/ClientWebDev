@@ -1,7 +1,17 @@
 <template>
     <div class="root">
         <v-app-bar class="align-center">
+            <router-link to="/">
+                    <div class="display-inline primary" rounded>
+                        <h1 class="m-0 text-uppercase white--text">
+                            Edukate
+                        </h1>
+                    </div>
+                </router-link>
+                <v-spacer/>
             <nav>
+                
+                
                 <a 
                     class="ml-3"
                     v-for="(page, index) in pages"
@@ -16,19 +26,13 @@
                 </a>
             </nav>
             <v-spacer/>
-            <div class="d-inline-flex align-items-center text-white" color="secondary">
-                <span><i class="fa fa-phone-alt mr-2" color="secondary"></i>+012 345 6789</span>
-                <span class="px-3">|</span>
-                <span><i class="fa fa-envelope mr-2" color="secondary"></i>info@example.com</span>
-            </div>
-            <v-spacer/>
             <router-link to="/sign_in">
                 <v-btn
                     class="mr-3"
                     color="primary"
                     depressed
                     elevation="2"
-                    large
+                    
                     outlined
                 >Sign in</v-btn>
             </router-link>
@@ -36,7 +40,7 @@
                 <v-btn 
                     color="primary"
                     elevation="2"
-                    large
+                   
                     class="mr-2"
                 >Sign up</v-btn>
             </router-link>
@@ -48,12 +52,6 @@
     export default {
         name: 'HeaderComponent',
         data: () => ({
-            icons: [
-                'mdi-facebook',
-                'mdi-twitter',
-                'mdi-linkedin',
-                'mdi-instagram',
-            ],
             pages: [
                 {
                     name: 'Home',
@@ -72,11 +70,21 @@
                     route: 'contact'
                 } 
             ],
+            icons: [
+                'mdi-facebook',
+                'mdi-twitter',
+                'mdi-linkedin',
+                'mdi-instagram',
+            ],
+            
             contacts: {
                 phone: '+012 345 6789',
                 email: 'info@example.com'
             }
         }),
+        watch: {
+            
+        },
         computed:{
             getContacts(contact) {
                 return `${contact} + |`

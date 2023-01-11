@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "src": "./img/courses-1.jpg"
+    },
+    {
+        "id":2,
+        "src": "./img/courses-3.jpg"
+    },
+    {
+        "id":3,
+        "src": "./img/about.jpg" 
+    },
+    {
+        "id":4,
+        "src": "./img/courses-6.jpg"
+    },
+    {
+        "id":5,
+        "src":"./img/about.jpg" 
+    }
+]
